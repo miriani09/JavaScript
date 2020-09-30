@@ -13,10 +13,6 @@ function task3(){
     document.write(text.fontsize(15))    
 }
 
-function task4(){
-
-}
-
 
 
 
