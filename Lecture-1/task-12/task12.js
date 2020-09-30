@@ -6,4 +6,4 @@ function func(){
     }
       document.write(text)
 
-}
+} 
