@@ -23,3 +23,50 @@ function day(){
     }
 }
 
+function pic() {
+
+    randomImage = new Array(); 
+    randomImage[0] = "pic1.jpg"; 
+    randomImage[1] = "pic2.jpg"; 
+    randomImage[2] = "pic3.jpg";
+    randomImage[3] = "pic4.jpg";
+    randomImage[4] = "pic5.jpg";
+    randomImage[5] = "pic6.jpg";
+    randomImage[6] = "pic7.jpg";
+    randomImage[7] = "pic8.jpg";
+    randomImage[8] = "pic9.jpg";
+    randomImage[9] = "pic10.jpg";
+    
+    number = Math.floor(Math.random()*randomImage.length);
+    document.write('<img src="'+randomImage[number]+'" />');
+}
+
+function rand4pic(){
+    randomImage = new Array(); 
+    randomImage[0] = "pic1.jpg"; 
+    randomImage[1] = "pic2.jpg"; 
+    randomImage[2] = "pic3.jpg";
+    randomImage[3] = "pic4.jpg";
+    randomImage[4] = "pic5.jpg";
+    randomImage[5] = "pic6.jpg";
+    randomImage[6] = "pic7.jpg";
+    randomImage[7] = "pic8.jpg";
+    randomImage[8] = "pic9.jpg";
+    randomImage[9] = "pic10.jpg";
+
+    number = Math.floor(Math.random()*randomImage.length);
+    document.write('<img src="'+randomImage[number]+'" />');
+    number = Math.floor(Math.random()*randomImage.length);
+    document.write('<img src="'+randomImage[number]+'" />');
+    number = Math.floor(Math.random()*randomImage.length);
+    document.write('<img src="'+randomImage[number]+'" />');
+    number = Math.floor(Math.random()*randomImage.length);
+    document.write('<img src="'+randomImage[number]+'" />');
+}
+
+
+function month(){
+    m = new Date()
+    r = Math.floor(Math.random(getMonth()))
+    document.write(r)
+}
