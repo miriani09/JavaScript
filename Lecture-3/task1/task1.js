@@ -43,11 +43,11 @@ function rand(length) {
     document.write(result,"<hr>")
  }
 
-
  function string1(){
     array = ["JavaScript","Html","Css"]
 
     document.write(array.includes("JavaScript"), "<hr>")
+    console.log(array)
 }
 
 
@@ -55,7 +55,6 @@ function rand(length) {
 function delsymbol(){
     str1 = "AABBCCDDEEFF"
     document.write(str1.replace(/(.)(?=.*\1)/g, ""))
-    
 }
 
 

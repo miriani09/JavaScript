@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        body{background-color: darkblue;}
+    </style>
+</head>
+<body>
+    <div id="ok">
+        <h1><span style="color: red;">გილოცავთ</span>, თქვენ სწორი არჩევანი გააკეთეთ!!!</h1>
+        <p style="color: yellow;">ამ ვებ გვერდზე მრავალი საინტერესო მაგალითი შეგხვდებათ ვებ გვერდის აწყობის შესახებ</p>
+        <P style="color: white;">ვებ გვერდის აწყობის ტექნოლოგიები:</P>
+        <ul style="color: white;">
+            <li>HTML - საფუძვლები</li>
+            <li>CSS - სტილები</li>
+            <li>javaScript - გაფორმება</li>
+            <li>PHP - პროგრამირება</li>
+        </ul>
+    </div>
+    <div id="cancel">
+        <h1 style="color: green;">დაინტერესდით ვებ გვერდის აწყობის ტექნოლოგიით.</h1><br><br>
+        <p style="text-shadow:2px 2px red; color: white;">დაეუფლეთ მოთხოვნად პროფესიას</p><br><br>
+        <p style="color: yellow;">ისწავლე და დასაქმდი!!!</p>
+    </div>
+    <script>
+        function alert1(){
+            alert("გამარჯობა, მე ვარ დიალოგური ფანჯარა alert")
+            d = "კეთილი იყოს თქვენი მობრძანება საიტზე !!!!"
+            document.write(d.fontsize(30))
+        }
+        function confirm1(){
+            c = confirm("გამარჯობა, გსურთ გაიგოთ ვებ გვერდის შესახებ უფრო მეტი ???")
+            if (c == true){
+                txt1 = document.getElementById("ok")
+                txt2 = document.getElementById("cancel")
+                txt2.style.display = "none"
+            }
+            else{
+                txt1 = document.getElementById("ok")
+                txt2 = document.getElementById("cancel")
+                txt1.style.display = "none"
+            }
+        }
+        alert1()
+        confirm1()
+    </script>
+</body>
+</html>
