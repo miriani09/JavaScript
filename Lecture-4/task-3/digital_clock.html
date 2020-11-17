@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="clock" style="font-size: 100px;"></p>
+    <script>
+        interval1 = setInterval(digital_clock, 1000)
+        function digital_clock() {
+          var d = new Date();
+          var n = d.toLocaleTimeString();
+          document.getElementById("clock").innerHTML = n;
+        }
+        </script>
+    </script>
+</body>
+</html>

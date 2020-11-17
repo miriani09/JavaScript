@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+        oneHour = 60 * 60 * 1000; // minutes*seconds*milliseconds
+        oneMinute = 60 * 1000; // seconds*milliseconds
+        oneSeconds = 1000; // milliseconds
+
+        firstDate = new Date(2016, 0, 0, 00, 00, 00);
+        secondDate = new Date();
+
+        Days = Math.round(Math.abs((secondDate - firstDate) / oneDay));
+        Hours = Math.round(Math.abs((secondDate - firstDate) / oneHour));
+        Minutes = Math.round(Math.abs((secondDate - firstDate) / oneMinute));
+        Seconds = Math.round(Math.abs((secondDate - firstDate) / oneSeconds));
+
+        document.write("2016 wlidan gasuli dgeebi dgemde - ", Days)
+        document.write("<br>2016 wlidan gasuli saatebi dgemde - ", Hours)
+        document.write("<br>2016 wlidan gasuli wutebi dgemde - ", Minutes)
+        document.write("<br>2016 wlidan gasuli wamebi dgemde - ", Seconds)
+    </script>
+</body>
+</html>

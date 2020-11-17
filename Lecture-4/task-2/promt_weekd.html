@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: silver;
+    }
+    div{
+        margin: auto;
+        background-color: white;
+        width: 600px;
+        height: 100px;
+        border-radius: 20px;
+        font-size: 50px;
+        color: tomato;
+        text-align: center;
+    }
+</style>
+<body>
+    <div id="week"></div>
+    <script>
+        function prompt1(){
+            
+            d = prompt("Enter Weekday:1,2,3,4,5,6,7")
+            debugger
+            if (d == 1){
+                w = "Monday"
+                document.getElementById("week").innerHTML = w
+            }
+            else if (d == 2){
+                w = "Tuesday"
+                document.getElementById("week").innerHTML = w
+            }
+            else if (d == 3){
+                w = "Wednesday"
+                document.getElementById("week").innerHTML = w
+            }
+            else if (d == 4){
+                w = "Thursday"
+                document.getElementById("week").innerHTML = w
+            }
+            else if (d == 5){
+                w = "Friday"
+                document.getElementById("week").innerHTML = w
+            }
+            else if (d == 6){
+                w = "Saturday"
+                document.getElementById("week").innerHTML = w
+            }
+            else if (d == 7){
+                w = "Sunday"
+                document.getElementById("week").innerHTML = w
+            }
+            else if (d == null){
+                w = "You Push Cancel, Good Luck"
+                document.getElementById("week").innerHTML = w
+                console.log(w)
+            }
+            else{
+                w = "This day does not exist"
+                document.getElementById("week").innerHTML = w
+            }
+        }
+        prompt1()
+    </script>
+</body>
+</html>
