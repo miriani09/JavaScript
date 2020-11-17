@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: silver;
+    }
+    .div1{
+        float: left;
+        font-size: 20px;
+    }
+    .div2{
+        width: 200px;
+        height: 20px;
+        border: solid 1px black;
+        margin-left: 100px;
+        background-color: white;
+    }
+    .div3{
+        position: absolute;
+        margin-top: 20px;
+    }
+    button{
+        width: 50px;
+        height: 30px;
+    }
+</style>
+<body>
+    <div class="div1">Week days:</div>
+    <div class="div2" id="week"></div>
+    <div class="div3">
+        <button onclick="weekDay('mon')">1</button>
+        <button onclick="weekDay('tue')">2</button>
+        <button onclick="weekDay('wed')">3</button>
+        <button onclick="weekDay('thu')">4</button>
+        <button onclick="weekDay('fri')">5</button>
+        <button onclick="weekDay('sat')">6</button>
+        <button onclick="weekDay('sun')">7</button>
+    </div>
+    <script>
+        function weekDay(week){
+           j = {
+            mon : "Monday",
+            tue : "Tuesday",
+            wed : "Wednesday",
+            thu : "Thursday",
+            fri : "Friday",
+            sat : "Saturday",
+            sun : "Sunday",
+           }
+           document.getElementById("week").innerHTML = j[week]
+        }
+    </script>
+</body>
+</html>

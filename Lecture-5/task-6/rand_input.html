@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" placeholder="From A" id="a">
+        <input type="text" placeholder="Until B" id="b">
+        =<label id="output"></label>
+        <br>
+        <br>
+        <button onclick="rand()">Submit</button>
+    <script>
+        function rand(){
+            a = document.getElementById("a").value
+            b = document.getElementById("b").value
+            array = []
+            for (i = 0; i <= 30; i++){
+                array.push(Math.round(Math.random()*parseInt(b)-parseInt(a))+parseInt(a))
+            }
+            document.getElementById("output").innerHTML = array
+        }
+    </script>
+</body>
+</html>

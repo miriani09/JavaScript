@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 50px;
+            height: 17px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+    <input type="text" placeholder="raodenoba" id="num" >
+    %
+    <input type="text" placeholder="procenti" id="perc" >
+    =
+    <label id="solve"></label>
+    </form>
+    <br>
+    <button onclick="percentage()">Submit</button>
+
+    <script>
+        function percentage(){
+            num = document.getElementById("num").value
+            perc = document.getElementById("perc").value
+            s = (num / 100) * perc
+            document.getElementById("solve").innerHTML = s
+        }
+        percentage()
+    </script>
+</body>
+</html>
