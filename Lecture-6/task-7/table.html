@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr, td{
+            border-collapse: collapse;
+            border: solid 1px black;
+            width: 500px;
+            height: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Column" id="row">
+    <input type="text" placeholder="Row" id="col">
+    <button onclick="tableCreate()">Submit</button>
+    <br><br>
+    <div></div>
+    <script>
+
+        function tableCreate(){
+
+        row = document.getElementById("row").value
+        col = document.getElementById("col").value
+
+        body = document.body,
+        tbl  = document.createElement('table');
+
+        for(i = 0; i < parseInt(row); i++){
+            tr = tbl.insertRow();
+            for(j = 0; j < parseInt(col); j++){
+                    td = tr.insertCell();
+                    td.appendChild(document.createTextNode('Cell'))
+            }
+        }
+        body.appendChild(tbl);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr, td{
+            border-collapse: collapse;
+            border: solid 1px black;
+            width: 500px;
+            height: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function tableCreate(row,col){
+
+        body = document.body
+        tbl  = document.createElement('table');
+
+        for(i = 0; i < row; i++){
+            tr = tbl.insertRow();
+            for(j = 0; j < col; j++){
+                    td = tr.insertCell();
+                    td.appendChild(document.createTextNode('Cell'))
+            }
+        }
+        body.appendChild(tbl);
+        }
+        tableCreate(4,5)
+    </script>
+</body>
+</html>
