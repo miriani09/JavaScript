@@ -13,10 +13,14 @@ function rand3(a, b){
 }
 
 function rand4(a, b){
-    arr = [];
-    while(arr.length < 10){
-    r = Math.floor(Math.random() * b-a+1) + a;
-    if(arr.indexOf(r) == -1) arr.push(r);
+    arr = []
+    for (i = 0; i <= 10; i++){
+        arr.push(Math.round(Math.random()*(b-a)+a))
     }
     document.write("10 შემთხვევითი რიცხვი - ", arr);
+}
+
+function rand5(a, b){
+    r = Math.round(Math.random() * (b-a) + a);
+    document.write("შემთხვევითი რიცხვი - ", r);
 }
