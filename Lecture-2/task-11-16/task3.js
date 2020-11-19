@@ -19,7 +19,7 @@ function day(){
         document.write("Friday")
     }
     else if(d == 6){
-        document.write("Sutarday")
+        document.write("Saturday")
     }
 }
 
@@ -66,7 +66,10 @@ function rand4pic(){
 
 
 function month(){
-    m = new Date()
-    r = Math.floor(Math.random(getMonth()))
+    d = new Date()
+    a = 1
+    b = 31
+    r = Math.round(Math.random()*(b-a)+a)
     document.write(r)
 }
+
