@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rand_word.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div1">
+        <p>სიტყვებში მინიმალური რაოდენობის სიმბოლო:</p>
+        <input type="text" placeholder="Num" id="word1">
+
+        <p>სიტყვებში მაქსიმალური რაოდენობის სიმბოლო:</p>
+        <input type="text" placeholder="Num" id="word2">
+
+        <p>აბზაცში მინიმალური რაოდენობის სიტყვები:</p>
+        <input type="text" placeholder="Num" id="word3">
+
+        <p>აბზაცში მაქსიმალური რაოდენობის სიტყვები:</p>
+        <input type="text" placeholder="Num" id="word4">
+
+        <p>აბზაცების რაოდენობა</p>
+        <input type="text" placeholder="Num" id="word5"><br><br>
+
+        <button onclick="word_generator()">გენერირება</button>
+        <textarea id="result" cols="60" rows="20"></textarea>
+    </div>
+    <script>
+        function word_generator(){
+            min = document.getElementById("word1").value
+            max = document.getElementById("word2").value
+            text = "";
+            chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+            p_min = document.getElementById("word3").value
+            p_max = document.getElementById("word4").value
+
+            for (i = min; i <= max; i++){
+                text += chars.charAt(Math.round(Math.random() * chars.length));
+            }
+            paragraph = Math.round(Math.random()) * (parseInt(p_max) - parseInt(p_min))+parseInt(p_min)
+            words = text.repeat(parseInt(paragraph))
+
+            p_count = document.getElementById("word5").value
+            p_repeat = words.repeat(p_count)
+
+            for (j = 0; j <= 10; j++){
+                document.getElementById("result").innerHTML += "\nახალი აბზაცი" + p_repeat
+            }
+        }
+    </script>
+</body>
+</html>

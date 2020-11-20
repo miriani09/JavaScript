@@ -1,0 +1,10 @@
+.div1{
+    border: solid 1px green;
+    width: 500px;
+    min-height: 500px;
+    background-color: lightblue;
+}
+
+input{
+    width: 50px;
+}
