@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div0{
+            border: solid 1px green;
+            width: 800px;
+            height: 250px;
+        }
+        .div1{
+            border: solid 1px red;
+            background-color: green;
+            width: 300px;
+            height: 100px;
+        }
+        .div2{
+            border: solid 1px green;
+            width: 800px;
+            height: 100px;
+            padding: 10px;
+        }
+        p{
+            border: solid 1px black;
+            background-color: white;
+
+        }
+        h1{
+            border: solid 1px black;
+            background-color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="div0">
+        <div id="list">
+                <h1 id="1">This is a H1</h1>
+                <p id="2">This is a paragraph</p>
+        </div>
+        <div class="div1">
+            <p>this is a text box</p>
+            <button>this is a button</button>
+        </div>
+    </div>
+    <br>
+    <div class="div2">
+        <button onclick="dom()">ParentNode</button><br>
+        <button onclick="nextsibling()">nextSibling</button><br>
+        <button >previousSibling</button><br>
+        <button onclick="firstCh()">firstChild</button><br>
+        <button >lastChild</button>
+    </div>
+    <script>
+        function dom(){
+            b = document.body
+            b1 = b.children
+            b1[0].style.backgroundColor = "red"
+        }
+        function firstCh(){
+            b2 = document.getElementById("list").firstElementChild
+            b2.style.backgroundColor = "red"
+
+        }
+        function nextsibling(){
+            b4 = document.getElementById("list").firstElementChild
+            b4.nextElementSibling.style.backgroundColor = "red"
+        }
+    </script>
+</body>
+</html>

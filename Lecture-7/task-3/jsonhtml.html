@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <button onclick="js()">Button</button>
+    <script>
+        function js(){
+        fetch("../task-3/testing.html", {mode: 'no-cors'})
+        .then(res => res.text())
+        .then(html => JSON.stringify(html))
+        .then(js => console.log(JSON.parse(js)))
+        
+}
+    </script>
+</body>
+</html>
