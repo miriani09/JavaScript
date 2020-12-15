@@ -13,7 +13,7 @@
         fetch("../task-3/testing.html", {mode: 'no-cors'})
         .then(res => res.text())
         .then(html => JSON.stringify(html))
-        .then(js => console.log(JSON.parse(js)))
+        .then(js => document.write(JSON.parse(js)))
 
 }
     </script>
