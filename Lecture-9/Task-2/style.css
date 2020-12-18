@@ -12,3 +12,9 @@
     position: relative;
 }
 
+p{
+    font-size: xx-large;
+    position: absolute;
+    font-style: italic;
+    left: 70px;
+}
