@@ -1,0 +1,15 @@
+.div1{
+    width: 800px;
+    height: 700px;
+    border: solid 1px black;
+    margin: auto;
+    background-color: white;
+    position: relative;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    float: left;
+}

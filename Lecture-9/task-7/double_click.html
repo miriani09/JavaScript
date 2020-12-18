@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button  ondblclick="tw_clk()" onclick="one_click()">Click one and click twice</button>
+    <p id="text"></p>
+    <script>
+        function tw_clk(){
+            document.getElementById("text").innerHTML = "Double Click"
+        }
+        function one_click(){
+            document.getElementById("text").innerHTML = "One Click"
+        }
+    </script>
+</body>
+</html>

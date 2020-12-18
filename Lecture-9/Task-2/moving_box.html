@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div1">
+        <button class="div2"  id="box" ></button>
+    </div>
+
+    <script>
+        document.onkeydown = moving_box
+        box_lr = 100
+        box_du = 100
+        box_move_lr = 0
+        box_move_du = 0
+        function moving_box(e){
+            /*სიგანის და სიმაღლის გაზრდა ისრებით*/
+            if(e.keyCode == "39" && box_lr <= 790){
+                    box_lr += 10
+                    document.getElementById("box").style.backgroundColor = "purple"
+                }
+            box_right = document.getElementById("box").style.width = box_lr + "px"
+
+            if(e.keyCode == "37" && box_lr >= 30){
+                    box_lr -= 10
+                    document.getElementById("box").style.backgroundColor = "red"
+                }
+            box_left = document.getElementById("box").style.width = box_lr + "px"
+
+            if(e.keyCode == "40" && box_du >= 20 && box_du <= 390){
+                box_du += 10
+                document.getElementById("box").style.backgroundColor = "purple"
+            }
+            box_down = document.getElementById("box").style.height = box_du + "px"
+
+            if(e.keyCode == "38" && box_du >= 30 && box_du <= 400){
+                box_du -= 10
+                document.getElementById("box").style.backgroundColor = "red"
+            }
+            box_up = document.getElementById("box").style.height = box_du + "px"
+
+
+            /*ფიგურის მართვა ღილაკებით - "a,s,d,w"*/
+            if(e.keyCode == "68" && box_move_lr <= 690){
+                box_move_lr += 10
+                }
+            box_move_right = document.getElementById("box").style.left = box_move_lr + "px"
+
+            if(e.keyCode == "65" && box_move_lr >= 10){
+                box_move_lr -= 10
+                }
+            box_move_left = document.getElementById("box").style.left = box_move_lr + "px"
+
+            if(e.keyCode == "83" && box_move_du <= 290){
+                box_move_du += 10
+            }
+            box_move_down = document.getElementById("box").style.top = box_move_du + "px"
+
+            if(e.keyCode == "87" && box_move_du >= 10 && box_move_du <= 300){
+                box_move_du -= 10
+            }
+            box_move_up = document.getElementById("box").style.top = box_move_du + "px"
+
+            
+        }
+
+    </script>
+</body>
+</html>

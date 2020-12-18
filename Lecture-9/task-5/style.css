@@ -1,0 +1,14 @@
+.div1{
+    width: 600px;
+    height: 500px;
+    border: solid 1px black;
+    background-color: white;
+}
+
+div{
+    width: 20px;
+    height: 20px;
+    background-color: tomato;
+    border: solid 1px black;
+    position: absolute;
+}

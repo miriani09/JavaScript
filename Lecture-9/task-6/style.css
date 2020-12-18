@@ -1,0 +1,15 @@
+.div1{
+    width: 600px;
+    height: 500px;
+    border: solid 1px black;
+    overflow: hidden;
+}
+
+.div2{
+    width: 30px;
+    height: 30px;
+    border: solid 1px black;
+    background-color: red;
+    transform:translate3d(-50%,-50%,0);
+    position: absolute;
+}

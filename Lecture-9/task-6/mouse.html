@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div1" id="border">
+        <div class="div2" id="box"></div>
+    </div>
+
+    <script>
+        function mouse1(e){
+            main_div = document.getElementById("border").addEventListener("mousemove", function(e){
+                box = document.getElementById("box")
+                if(e.pageX>=100 || e.pageX <= 500){
+                    box.style.left = e.pageX + "px"
+                }
+                console.log(e.pageX)
+                box.style.top = e.pageY + "px"
+                console.log(box)
+            })
+
+        }
+        mouse1()
+    </script>
+</body>
+</html>

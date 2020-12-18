@@ -1,0 +1,27 @@
+.div1{
+    width: 800px;
+    height: 400px;
+    border: solid 2px blue;
+    margin: auto;
+}
+
+.div2{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+}
+
+.div3{
+    width: 500px;
+    height: 150px;
+    border: solid 2px blue;
+    margin: auto;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    margin-left: 18px;
+    margin-top: 8px;
+}
