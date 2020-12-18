@@ -15,12 +15,8 @@
         function mouse1(e){
             main_div = document.getElementById("border").addEventListener("mousemove", function(e){
                 box = document.getElementById("box")
-                if(e.pageX>=100 || e.pageX <= 500){
-                    box.style.left = e.pageX + "px"
-                }
-                console.log(e.pageX)
+                box.style.left = e.pageX + "px"
                 box.style.top = e.pageY + "px"
-                console.log(box)
             })
 
         }
