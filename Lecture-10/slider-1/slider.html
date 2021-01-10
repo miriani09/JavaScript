@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div1">
+        <h1 style="text-align: center;">SLIDER</h1>
+        <div class="div3">
+            <div class="div2"><img src="/slider-1/pic/1.jpg" alt="" style="width: 100%; height: 100px;"></div>
+            <div class="div2"><img src="/slider-1/pic/2.jpg" alt="" style="width: 100%; height: 100px;"></div>
+            <div class="div2"><img src="/slider-1/pic/3.jpg" alt="" style="width: 100%; height: 100px;"></div>
+            <div class="div2"><img src="/slider-1/pic/4.jpg" alt="" style="width: 100%; height: 100px;"></div>
+        </div>
+        <div class="div4">
+            <div class="div5" id="demo">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function asd(){
+            s = document.getElementsByClassName("div2")
+            d = document.addEventListener("mouseenter", function(){
+                document.getElementById("demo").innerHTML = d
+            }
+        }
+        
+    </script>
+</body>
+</html>
