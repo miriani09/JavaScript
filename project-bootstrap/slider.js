@@ -31,5 +31,4 @@ function changeSlide(){
 }
 
 
-/* Translate */
 

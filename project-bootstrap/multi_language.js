@@ -26,6 +26,8 @@ var arrLang = {
       "book_list1": "Education",
       "book_list2": "Biography",
       "book_list3": "Poetry",
+        //book area
+        "new_book": "New added books"
     },
     'ge': {
         //header
@@ -55,6 +57,8 @@ var arrLang = {
       "book_list1": "საგანმანათლებლო",
       "book_list2": "ბიოგრაფიული",
       "book_list3": "პოეზია",
+      //book area
+      "new_book": "ახალი დამატებული წიგნები"
     }
   };
   $(function() {
