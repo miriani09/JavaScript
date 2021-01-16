@@ -6,12 +6,14 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body>
-    <header>
+    <header class="lang">
         <nav class="navbar navbar-expand-lg navbar" style="margin-left: 10px;">
             <div class="container-fluid">
-                <a href="#">
+                <a href="main.html">
                     <img src="/pic/1.png" alt="" width="50" height="50" >
                 </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,25 +24,29 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">მთავარი</a>
+                    <a class="nav-link active lang" aria-current="page" href="main.html" key="home">მთავარი</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link active dropdown-toggle lang" href="#" key="category" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       კატეგორია
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">საგანმანათლებლო</a></li>
-                      <li><a class="dropdown-item" href="#">ბიოგრაფიული</a></li>
-                      <li><a class="dropdown-item" href="#">პოეზია</a></li>
+                      <li><a class="dropdown-item lang" key="book_list1" href="#">საგანმანათლებლო</a></li>
+                      <li><a class="dropdown-item lang" key="book_list2" href="#">ბიოგრაფიული</a></li>
+                      <li><a class="dropdown-item lang" key="book_list3" href="#">პოეზია</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">ჩვენს შესახებ</a>
+                    <a class="nav-link active lang" aria-current="page" href="#" key="about">ჩვენს შესახებ</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">კონტაქტი</a>
+                    <a class="nav-link active lang" aria-current="page" href="#" key="contact">კონტაქტი</a>
                   </li>
                 </ul>
+                <div>
+                  <a href="#ge" class="translate" id="ge" id="en">geo</a>
+                  <a href="#en" class="translate" id="en" id="en">eng</a>
+                </div>
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a class="nav-link active dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -49,9 +55,10 @@
                                 <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
                             </svg>
                         </a>
+
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">შესვლა</a></li>
-                          <li><a class="dropdown-item" href="#">რეგისტრაცია</a></li>
+                          <li><a class="dropdown-item lang" key="log-in" href="log-in.html">შესვლა</a></li>
+                          <li><a class="dropdown-item lang" key="reg" href="registration.html">რეგისტრაცია</a></li>
                         </ul>
                 </ul>
                 <form class="d-flex">
@@ -66,7 +73,7 @@
         </header>
         <div style="height: 65px; position: relative;"></div>
         <!--Slider-->
-      <div id="slider">  
+      <div id="slider">
         <div class="slide">
           <img src="/pic/slide-1.jpg"  class="img1">
         </div>
@@ -127,7 +134,7 @@
         </div>
 
         <hr>
-        
+
         <div class="container" >
           <h6 class="col" style="text-align: center; background-color: transparent;">ახალი დამატებული წიგნები</h6>
           <div class="row align-items-start">
@@ -185,8 +192,17 @@
             </div>
           </div>
         </div>
-    <script src="app.js"></script>
+        <script src="app.js">
+          changeSlide()
+        </script>
+
+
+
+    <script src="multi_language.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  </body>
 </html>
 
