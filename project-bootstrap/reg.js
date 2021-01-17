@@ -111,10 +111,11 @@ function done(){
 debugger
     if(mail_check() && name_check() && surname_check() && phone_check() && password_match){
         alert("თქვენ წარმატებით დარეგისტრირდით")
+        window.location.reload()
     }else if(!password_match){
         alert("პაროლები არ ემთხვევა")
     }else{
         alert("გთხოვთ შეავსოთ ფორმა სწორად")
     }
-
+    
 }
