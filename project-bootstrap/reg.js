@@ -47,24 +47,27 @@ function password_show() {
     }
 }
 
-valid = false
 function mail_check(){
     Email=document.getElementById("mail");
 
     var filterEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     if(!filterEmail.test(Email.value)){
         Email.style.border = "solid 2px red"
-    }else(Email.style.border = "solid 2px green")
+        return false
+    }else{
+        Email.style.border = "solid 2px green"
+        return true
+    }
 }
 function name_check(){
     name1 = document.getElementById("name")
 
     if(name1.value === ""){
         name1.style.border = "solid 2px red"
-        valid = false
+        return false
     }else{
         name1.style.border = "solid 2px green"
-        valid = true
+        return true
     }
 
 }
@@ -73,10 +76,10 @@ function surname_check(){
 
     if(surname1.value === ""){
         surname1.style.border = "solid 2px red"
-        valid = false
+        return false
     }else{
         surname1.style.border = "solid 2px green"
-        valid = true
+        return true
     }
 }
 function phone_check(){
@@ -85,10 +88,10 @@ function phone_check(){
 
     if(!filterPhone1.test(phone1.value)){
         phone1.style.border = "solid 2px red"
-        valid = false
+        return false
     }else{
         phone1.style.border = "solid 2px green"
-        valid = true
+        return true
     }
 }
 
@@ -97,28 +100,21 @@ function compare_password(){
     x2 = document.getElementById("pwd2");
     debugger
     if(x.value == x2.value){
-        valid = true
+        return true
     }else{
-        valid = false
+        return false
     }
-    return valid
 }
 
 function done(){
-    mail_check()
-    name_check()
-    surname_check()
-    phone_check()
     password_match = compare_password()
-
-    if(valid){
-        alert("succes")
-        debugger
+debugger
+    if(mail_check() && name_check() && surname_check() && phone_check() && password_match){
+        alert("თქვენ წარმატებით დარეგისტრირდით")
     }else if(!password_match){
         alert("პაროლები არ ემთხვევა")
-        debugger
     }else{
-        alert("error")
+        alert("გთხოვთ შეავსოთ ფორმა სწორად")
     }
 
 }
