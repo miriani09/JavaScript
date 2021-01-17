@@ -23,11 +23,12 @@ var arrLang = {
       "password": 'Password',
       "save": 'Save',
         //category
-      "book_list1": "Education",
-      "book_list2": "Biography",
-      "book_list3": "Poetry",
+      "book_list1": "Information Technology",
+      "book_list2": "Engineering",
+      "book_list3": "Energy and Telecommunications",
         //book area
-        "new_book": "New added books"
+        "new_book": "Information Technology",
+        "new_book2": "Engineering",
     },
     'ge': {
         //header
@@ -54,11 +55,12 @@ var arrLang = {
         "password": 'პაროლი',
         "save": 'დამახსოვრება',
         //category
-      "book_list1": "საგანმანათლებლო",
-      "book_list2": "ბიოგრაფიული",
-      "book_list3": "პოეზია",
+      "book_list1": "ინფორმაციული ტექნოლოგიები",
+      "book_list2": "სამშენებლო",
+      "book_list3": "ენერგეტიკა",
       //book area
-      "new_book": "ახალი დამატებული წიგნები"
+      "new_book": "ინფორმაციული ტექნოლოგიები",
+      "new_book2": "სამშენებლო",
     }
   };
   $(function() {
