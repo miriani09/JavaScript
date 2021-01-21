@@ -52,7 +52,7 @@ defer(function() {
         $('.resource-slider-frame').animate({
           scrollLeft: '-=' + difference
         }, 500, function() {
-          // check arrows
+          
           checkArrows();
         });
       }
@@ -86,18 +86,18 @@ defer(function() {
         $('.resource-slider-frame').animate({
           scrollLeft: '-=' + width
         }, speed, function() {
-          // check arrows
+          
           checkArrows();
         });
       } else if ($this.hasClass('next')) {
         $('.resource-slider-frame').animate({
           scrollLeft: '+=' + width
         }, speed, function() {
-          // check arrows
+          
           checkArrows();
         });
       }
-    }); // end on arrow click
+    });
     
     $(window).on("load resize", function() {
       checkArrows();
@@ -107,8 +107,8 @@ defer(function() {
         $this.css({
           left: left
         })
-      }); // end each
-    }); // end window resize/load
+      });
+    });
     
     var resizeId;
     $(window).resize(function() {
@@ -116,7 +116,7 @@ defer(function() {
         resizeId = setTimeout(doneResizing, 500);
     });
     
-  })(jQuery); // end function
+  })(jQuery); 
 });
 
 /*slider 3*/
@@ -139,7 +139,7 @@ defer(function() {
         $('.resource-slider-frame1').animate({
           scrollLeft: '-=' + difference
         }, 500, function() {
-          // check arrows
+          
           checkArrows();
         });
       }
@@ -173,18 +173,18 @@ defer(function() {
         $('.resource-slider-frame1').animate({
           scrollLeft: '-=' + width
         }, speed, function() {
-          // check arrows
+         
           checkArrows();
         });
       } else if ($this.hasClass('next1')) {
         $('.resource-slider-frame1').animate({
           scrollLeft: '+=' + width
         }, speed, function() {
-          // check arrows
+          
           checkArrows();
         });
       }
-    }); // end on arrow click
+    });
     
     $(window).on("load resize1", function() {
       checkArrows();
@@ -194,8 +194,8 @@ defer(function() {
         $this.css({
           left: left
         })
-      }); // end each
-    }); // end window resize/load
+      });
+    });
     
     var resizeId;
     $(window).resize(function() {
@@ -203,5 +203,5 @@ defer(function() {
         resizeId = setTimeout(doneResizing, 500);
     });
     
-  })(jQuery); // end function
+  })(jQuery);
 });

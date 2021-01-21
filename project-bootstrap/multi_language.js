@@ -64,15 +64,23 @@ var arrLang = {
     }
   };
   $(function() {
+    lang = localStorage.getItem('lang')
+    if(lang != 'undefined'){
+      translate(lang)
+    }
     $('.translate').click(function() {
       var lang = $(this).attr('id');
-      $('.lang').each(function(index, item) {
-        $(this).text(arrLang[lang][$(this).attr('key')]);
-      });
-  
-      $('.lang_placeholder').each(function(index, item) {
-        $(this).attr("placeholder", arrLang[lang][$(this).attr('key')]);
-      });
+      localStorage.setItem('lang', lang)
+      translate(lang)
     });
   });
 
+function translate(lang){
+  $('.lang').each(function(index, item) {
+    $(this).text(arrLang[lang][$(this).attr('key')]);
+  });
+
+  $('.lang_placeholder').each(function(index, item) {
+    $(this).attr("placeholder", arrLang[lang][$(this).attr('key')]);
+  });
+}
