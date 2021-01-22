@@ -19,7 +19,7 @@ var arrLang = {
       "submit": 'Submit',
         //authorize
       "auth":'Authorization',
-      "mail": 'Mail',
+      "mail": 'Email',
       "password": 'Password',
       "save": 'Save',
         //category
