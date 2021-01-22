@@ -1,3 +1,4 @@
+/* Mains Slider*/
 var slides = document.querySelectorAll(".slide");
 var dots = document.querySelectorAll(".dot");
 var index = 0;
@@ -32,7 +33,7 @@ function changeSlide(){
 
 
 
-/*slider2*/
+/*slider2-IT-books*/
 function defer(method) {
   if (window.jQuery)
     method();
@@ -119,7 +120,7 @@ defer(function() {
   })(jQuery); 
 });
 
-/*slider 3*/
+/*slider 3-Engineering-books*/
 function defer(method) {
   if (window.jQuery)
     method();
