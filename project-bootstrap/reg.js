@@ -108,7 +108,6 @@ function compare_password(){
 
 function done(){
     password_match = compare_password()
-debugger
     if(mail_check() && name_check() && surname_check() && phone_check() && password_match){
         alert("თქვენ წარმატებით დარეგისტრირდით")
         window.location.reload()
@@ -117,5 +116,4 @@ debugger
     }else{
         alert("გთხოვთ შეავსოთ ფორმა სწორად")
     }
-    
 }
