@@ -98,7 +98,6 @@ function phone_check(){
 function compare_password(){
     x = document.getElementById("pwd");
     x2 = document.getElementById("pwd2");
-    debugger
     if(x.value == x2.value){
         return true
     }else{
