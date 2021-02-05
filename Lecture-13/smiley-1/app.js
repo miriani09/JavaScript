@@ -7,7 +7,7 @@ function canvasFunction(){
     ctx.stroke();
 
     ctx.beginPath();
-    ctx.arc(120, 60, 10, 0 , Math.PI * 2, true);
+    ctx.arc(121, 60, 10, 0 , Math.PI * 2, true);
     ctx.stroke();
     ctx.closePath();
     
