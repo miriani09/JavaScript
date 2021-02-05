@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <img src="/project-bootstrap/pic/1.png" width="70px" style="padding: 10px;" alt="">
+        <div class="auth">
+            <a href="">Login</a>
+            |
+            <a href="" class="a1">Sign UP</a>
+        </div>
+    </div>
+
+    <div class="navbar" style="display: flex;">
+        <div class="drop1">
+            <div  style="text-align: center;">Navbar 1</div>
+            <div class="drpmenu"><a href="" class="a2">Dropped Menu 1</a></div>
+            <div class="drpmenu"><a href="" class="a2">Dropped Menu 2</a></div>
+            <div class="drpmenu"><a href="" class="a2">Dropped Menu 3</a></div>
+        </div>
+        <div class="drop1">
+            <div  style="text-align: center;">Navbar 2</div>
+            <div class="drpmenu"><a href="" class="a2">Dropped Menu 1</a></div>
+            <div class="drpmenu"><a href="" class="a2">Dropped Menu 2</a></div>
+            <div class="drpmenu"><a href="" class="a2">Dropped Menu 3</a></div>
+        </div>
+    </div>
+
+    <div class="img">
+
+    </div>
+
+    <div class="imgframe">
+        <div class="slide_img"><img src="/Lecture-14/task/img/1.jpg" alt="" class="img_style"></div>
+        <div class="slide_img"><img src="/Lecture-14/task/img/2.jpg" alt="" class="img_style"></div>
+        <div class="slide_img"><img src="/Lecture-14/task/img/3.jpg" alt="" class="img_style"></div>
+        <div class="slide_img"><img src="/Lecture-14/task/img/4.jpg" alt="" class="img_style"></div>
+        <div class="slide_img"><img src="/Lecture-14/task/img/5.jpg" alt="" class="img_style"></div>
+    </div>
+
+
+    <script>
+        $(".drpmenu").hide()
+
+        $(document).ready(function() {
+        $('.navbar .drop1 ').hover(function() {
+            $(this).find('.drpmenu').stop().toggle();
+        });
+        });
+
+        function slider(){
+            $(document).ready(function(){
+
+                $(".img_style").mouseenter(function(){
+                $(this).clone().appendTo(".img").innerWidth("100%").innerHeight("100%").prev().remove()
+            })
+        })
+        }
+
+        slider()
+    </script>
+</body>
+</html>

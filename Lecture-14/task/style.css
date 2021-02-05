@@ -1,0 +1,95 @@
+body{
+    margin: auto;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: gainsboro;
+}
+.auth{
+    width: 15%;
+    position: relative;
+    left: 85%;
+    font-size: 25px;
+    top: -60%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.a1{
+    text-decoration: none;
+    color: orange;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    margin: auto;
+    color: white;
+}
+
+.drop1{
+    width: 150px;
+    padding: 15px;
+}
+.drop1:hover{
+    color: black;
+    background-color: white;
+    
+}
+
+.drpmenu{
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    background-color: #333;
+    width: 150px;
+    margin-left: -15px;
+    position: relative;
+    top: 15px;
+    text-align: center;
+}
+.drpmenu:hover{
+    background-color: grey;
+}
+.a2{
+    color: white;
+            
+}
+
+
+.imgframe{
+    border: solid 1px black;
+    width: 260px;
+    height: 570px;
+    position: relative;
+    margin-left: 82.5%;
+    margin-top: 10px;
+}
+
+.img{
+    width: 800px;
+    height: 570px;
+    border: solid 1px black;
+    position: relative;
+    float: left;
+    margin-left: 20%;
+    margin-top: 10px;
+    z-index: -1;
+}
+
+.slide_img{
+    border: solid 1px black;
+    width: 200px;
+    height: 105px;
+    margin: auto;
+    margin-top: 6px;
+}
+
+.img_style{
+    width: 200px;
+    height: 105px;
+}
+

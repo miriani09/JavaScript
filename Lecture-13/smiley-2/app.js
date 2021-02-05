@@ -16,15 +16,11 @@ function canvasFunction(){
     ctx.stroke();
     ctx.closePath();
 
-    // ctx.beginPath();
-    // ctx.arc(150, 100, 30, 0, 1 * Math.PI ,true);
-    // ctx.stroke();
-    // ctx.closePath();
-
     ctx.beginPath();
-    ctx.arc(150, 90, 40, 0, Math.PI * 1,false);
+    ctx.arc(150, 115, 30, 0, 1 * Math.PI ,true);
     ctx.stroke();
     ctx.closePath();
+
 }
 
 canvasFunction()

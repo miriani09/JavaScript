@@ -6,7 +6,6 @@ var index = 0;
 
 function prevSlide(n){
   index+=n;
-  console.log("prevSlide is called");
   changeSlide();
 }
 
